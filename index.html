@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <header class="header">
             <img src="./logo.svg" alt="" class="header__logo">
             <nav class="nav">
                 <ul class="nav__container">
                     <li class="nav__element"><a href="#">Portfolio</a></li>
                     <li class="nav__element"><a href="https://www.linkedin.com/in/nicolas-denis-24899518/">Linkedin</a> </li>
-                    <li class="nav__element"><a href="#">Contact</a></li>
+                    <li  onclick="openForm()" class="nav__element">Contact </li>
                 </ul>
             </nav>
         </header>
@@ -148,5 +150,42 @@
         <p class="footer__paragraph">2022 BY NICOLAS DENIS</p>
 
     </footer>
+
+    <div class="form-popup" id="myForm">
+
+        <div class="supercontainer">
+
+            <div class="form-decoration">
+
+                <h1 class="form-decoration_h1"></h1>
+                <div class="form-decoration_img">
+                    <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                </div>
+
+            </div>
+
+            <form action="/action_page.php" class="form-container"> 
+
+            
+        
+            <label for="name"><b>Full Name*</b></label>
+            <input type="text" placeholder="Dwight Schrute" name="name" required>
+
+            <label for="phone"><b>Phone*</b></label>
+            <input type="text" placeholder="07 08 09 10 11" name="phone" required>
+
+            <label for="email"><b>Email*</b></label>
+            <input type="text" placeholder="dwight@dundermifflin.com" name="email" required>
+        
+            <label for="details"><b>Details*</b></label>
+            <input type="textarea"  placeholder="Write everything you want to know or want to share" name="details" required>
+        
+            <button type="submit" class="btn">submit</button>
+            <button type="button" class="cross cancel" onclick="closeForm()">X</button>
+            </form>
+        </div>
+    </div>
+
+    
 </body>
 </html>

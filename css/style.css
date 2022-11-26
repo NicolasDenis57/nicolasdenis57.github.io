@@ -4,6 +4,11 @@ body{
    
 }
 
+#container{
+    opacity: 1;
+}
+    
+
 .container{
     margin: 0 auto;
     width: 80%;
@@ -11,6 +16,8 @@ body{
     display:flex;
     flex-direction: column;
     justify-items: center;
+    
+    
 
 }
 
@@ -42,6 +49,11 @@ body{
 .nav__element{
     padding: 20px;
 
+
+}
+
+.nav__element:hover{
+    cursor: pointer;
 }
 
 .main{
@@ -183,6 +195,142 @@ body{
     margin: 1em 0;
     display: block;
 }
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top:5px;
+  
+    margin: 0 10%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .supercontainer{
+      display: flex;
+      
+      width:100%;
+     
+      
+  }
+  
+  .form-decoration_h1{
+      color: white;
+  }
+  
+  .form-decoration_img{
+      height:300px;
+      width: 400px;
+      
+      
+  }
+
+  i{
+    color: white;
+    font-size: 10em;
+    position:absolute;
+    top: 35%;
+    left:5%;
+    
+  }
+  
+  .form-decoration{
+      width:40%;
+      padding: 40px 10px;
+      background-color: black;
+  
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    padding: 10% 10%;
+    background-color: white;
+    width: 60%;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text],.form-container input[type=textarea] {
+    width: 100%;
+    padding: 20px 0;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-bottom:1px #ccc solid;
+    background: white;
+    font-size: 1rem;;
+  }
+  
+  input::placeholder {
+      opacity: 0.5;
+      margin:0;
+      padding: 0;
+     
+     
+      
+  }
+  
+  .form-container input[type=textarea]{
+      resize:initial;
+      height:150px;
+     
+      
+  }
+  
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=textarea]:focus  {
+    outline: none;
+    border-bottom:1px black solid;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: white;
+    color: black;
+    padding: 16px 20px;
+    cursor: pointer;
+    width: 150px;
+    margin-bottom:10px;
+    border: 3px black solid;
+    font-weight: bold;
+    
+  }
+  
+  .cross{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: grey;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: white;
+    border: none;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
 
 
 @media screen and (max-width: 800px)
