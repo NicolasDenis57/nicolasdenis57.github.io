@@ -34,11 +34,6 @@ body{
     
 }
 
-.nav{
-    
-
-}
-
 .nav__container{
     display: flex;
     padding:20px;
@@ -54,10 +49,6 @@ body{
 
 .nav__element:hover{
     cursor: pointer;
-}
-
-.main{
-    
 }
 
 .main__h1{
@@ -110,11 +101,6 @@ body{
     color: #1a1a1a;
     letter-spacing: 0;
     line-height: 2.4rem;
-    
-}
-
-.section__img{
-   
     
 }
 
